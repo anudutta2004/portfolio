@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anu Dutta | Portfolio</title>
+  <link rel="stylesheet" href="style-dark.css" id="theme-style" />
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <div style="text-align: right; padding: 10px 20px;">
+    <button onclick="toggleTheme()" style="padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; background-color: #0ef; color: black; font-weight: bold;">Toggle Theme</button>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Anu.</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="content">
+      <h1>Hi, I'm Anu Dutta</h1>
+      <h3>Frontend Developer</h3>
+      <p>
+        I’m a CSE student with a passion for building clean and simple websites.
+        Eager to learn and grow in real-world web design.
+      </p>
+      <div class="buttons">
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/_aniket_dutta_/" target="_blank">
+          <img src="icons8-instagram-logo.svg" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com/in/anu-dutta-455323335/" target="_blank">
+          <img src="icons8-linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="https://www.facebook.com/aniketa.datta" target="_blank">
+          <img src="icons8-facebook.svg" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+    <div class="image">
+      <img src="my_photo.jpg" alt="Anu Dutta" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a CSE student passionate about frontend development and web design. I have skills in HTML, CSS, Python, and C programming.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Website Design</li>
+      <li>Frontend Development</li>
+      <li>Responsive Layouts</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>This website is a self-designed personal portfolio built using HTML and CSS. More projects will be added soon.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:duttaaniket328@gmail.com">duttaaniket328@gmail.com</a></p>
+    <p>Phone: 8918277133</p>
+  </section>
+
+  <!-- Theme Switch Script -->
+  <script>
+    function toggleTheme() {
+      const themeLink = document.getElementById('theme-style');
+      const isDark = themeLink.getAttribute('href') === 'style-dark.css';
+      themeLink.setAttribute('href', isDark ? 'style-light.css' : 'style-dark.css');
+    }
+  </script>
+</body>
+</html>
